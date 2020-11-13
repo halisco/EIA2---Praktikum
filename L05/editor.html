@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Zaubertränke</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />  <!-- CSS hatte ich keine Zeit mehr, script war wichtiger-->   
+	<script src="script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+	<header>
+		<h1>Make your Potion</h1>
+    </header>
+    
+    <form>
+        <div id="form">
+            <h2>Der Trank...</h2>
+            <fieldset>
+                <legend>Name:</legend>
+                <input type="text">
+                <legend>Beschreibung:</legend>
+                <input type="textarea">
+                <legend>Wirkung:</legend>
+                <select name="Wirkung" id="wirkung">
+                    <option value="Liebestrank">Liebestrank</option>
+                    <option value="Verwandlungszauber">Verwandlungszauber</option>
+                    <option value="Kontrollfluch">Kontrollfluch</option>
+                    <option value="Lebenselixir">Lebenselixir</option>
+                </select>
+                <legend>Wirkungszeit:</legend>
+                <span id="slider">
+                    <span>
+                        1h
+                        <input type="range" name="Time" id="time" min="1" max="24" step="1" value="12">
+                        24h
+                    </span>
+                </span>
+                <legend>Extras:</legend>
+                <select name="Extras" id="extras">
+                    <option value="Vampierblut">Vampierblut</option>
+                    <option value="Phönixasche">Phönixasche</option>
+                    <option value="Schlangengift">Schlangengift</option>
+                    <option value="Demonenschweif">Demonenschweif</option>
+                </select>
+            </fieldset>
+            <h2>Die Bedingungen...</h2>
+            <fieldset>
+                <legend>Zubereitungsdauer:</legend>
+                <input type="radio" name="Dauer" id="3h" value="3h">
+                <label for="3h">3h</label>
+                <input type="radio" name="Dauer" id="5h" value="5h">
+                <label for="5h">5h</label>
+                <input type="radio" name="Dauer" id="10h" value="10h">
+                <label for="10h">10h</label>
+                <legend>Konsistenz:</legend>
+                <input type="radio" name="Konsistenz" id="schleimig" value="schleimig">
+                <label for="schleimig">schleimig</label>
+                <input type="radio" name="Konsistenz" id="zäh" value="zäh">
+                <label for="zäh">zäh</label>
+                <input type="radio" name="Konsistenz" id="dünnflüssig" value="dünnflüssig">
+                <label for="dünnflüssig">dünnflüssig</label>
+                <legend>Farbmischung:</legend>
+                <input type="checkbox" name="Farbe" id="blau" value="blau">
+                <label for="blau">blau</label>
+                <input type="checkbox" name="Farbe" id="rot" value="rot">
+                <label for="rot">rot</label>
+                <input type="checkbox" name="Farbe" id="gelb" value="gelb">
+                <label for="gelb">gelb</label>
+                <input type="checkbox" name="Farbe" id="grün" value="grün">
+                <label for="grün">grün</label>  
+            </fieldset>
+        </div>
+    </form>
+
+    <div>
+        <h2>Dein Rezept...</h2>
+        <fieldset>
+        <div id="order">
+
+        </div>
+        </fieldset>
+    </div>
+
+
+</body>
+
+</html>
