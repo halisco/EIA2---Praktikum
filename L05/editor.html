@@ -18,15 +18,15 @@
             <h2>Der Trank...</h2>
             <fieldset>
                 <legend>Name:</legend>
-                <input type="text">
+                <input type="text" name="Text" value="Text" price="0">
                 <legend>Beschreibung:</legend>
-                <input type="textarea">
+                <input type="textarea" name="Textarea" value="Textarea" price="0">
                 <legend>Wirkung:</legend>
                 <select name="Wirkung" id="wirkung">
-                    <option value="Liebestrank">Liebestrank</option>
-                    <option value="Verwandlungszauber">Verwandlungszauber</option>
-                    <option value="Kontrollfluch">Kontrollfluch</option>
-                    <option value="Lebenselixir">Lebenselixir</option>
+                    <option value="Liebestrank" price="300">Liebestrank</option>
+                    <option value="Verwandlungszauber" price="450">Verwandlungszauber</option>
+                    <option value="Kontrollfluch" price="275">Kontrollfluch</option>
+                    <option value="Lebenselixir" price="500">Lebenselixir</option>
                 </select>
                 <legend>Wirkungszeit:</legend>
                 <span id="slider">
@@ -38,36 +38,36 @@
                 </span>
                 <legend>Extras:</legend>
                 <select name="Extras" id="extras">
-                    <option value="Vampierblut">Vampierblut</option>
-                    <option value="Phönixasche">Phönixasche</option>
-                    <option value="Schlangengift">Schlangengift</option>
-                    <option value="Demonenschweif">Demonenschweif</option>
+                    <option value="Vampierblut" price="25">Vampierblut</option>
+                    <option value="Phönixasche" price="750">Phönixasche</option>
+                    <option value="Schlangengift" price="9">Schlangengift</option>
+                    <option value="Demonenschweif" price="45">Demonenschweif</option>
                 </select>
             </fieldset>
             <h2>Die Bedingungen...</h2>
             <fieldset>
                 <legend>Zubereitungsdauer:</legend>
-                <input type="radio" name="Dauer" id="3h" value="3h">
+                <input type="radio" name="Dauer" id="3h" value="3h" price="85">
                 <label for="3h">3h</label>
-                <input type="radio" name="Dauer" id="5h" value="5h">
+                <input type="radio" name="Dauer" id="5h" value="5h" price="105">
                 <label for="5h">5h</label>
-                <input type="radio" name="Dauer" id="10h" value="10h">
+                <input type="radio" name="Dauer" id="10h" value="10h" price="140">
                 <label for="10h">10h</label>
                 <legend>Konsistenz:</legend>
-                <input type="radio" name="Konsistenz" id="schleimig" value="schleimig">
+                <input type="radio" name="Konsistenz" id="schleimig" value="schleimig" price="15">
                 <label for="schleimig">schleimig</label>
-                <input type="radio" name="Konsistenz" id="zäh" value="zäh">
+                <input type="radio" name="Konsistenz" id="zäh" value="zäh" price="15">
                 <label for="zäh">zäh</label>
-                <input type="radio" name="Konsistenz" id="dünnflüssig" value="dünnflüssig">
+                <input type="radio" name="Konsistenz" id="dünnflüssig" value="dünnflüssig" price="15">
                 <label for="dünnflüssig">dünnflüssig</label>
                 <legend>Farbmischung:</legend>
-                <input type="checkbox" name="Farbe" id="blau" value="blau">
+                <input type="checkbox" name="Farbe" id="blau" value="blau" price="5">
                 <label for="blau">blau</label>
-                <input type="checkbox" name="Farbe" id="rot" value="rot">
+                <input type="checkbox" name="Farbe" id="rot" value="rot" price="5">
                 <label for="rot">rot</label>
-                <input type="checkbox" name="Farbe" id="gelb" value="gelb">
+                <input type="checkbox" name="Farbe" id="gelb" value="gelb" price="5">
                 <label for="gelb">gelb</label>
-                <input type="checkbox" name="Farbe" id="grün" value="grün">
+                <input type="checkbox" name="Farbe" id="grün" value="grün" price="5">
                 <label for="grün">grün</label>  
             </fieldset>
         </div>
